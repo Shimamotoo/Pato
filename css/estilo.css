@@ -1,15 +1,14 @@
 @charset "UTF-8";
 
 header#cabecalho{
-    border-bottom: 1px #606060 double;
     height: 50px;
 }
 
 img{
-    display: block;
+    position: relative;
     width: 400px;   
     height: 180px;
-    margin: 15px auto auto auto;
+    margin: 50px 200px 15px 200px;
     border: 2px solid white;
     box-shadow: 2px 2px 4px black;
    
@@ -23,18 +22,23 @@ body{
 
 div#interface{
     width: 800px;
-    margin: -7px auto -40px auto;
+    margin: -7px auto 20px auto;
     background-color:rgb(252, 233, 65);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
-    padding: 10px;
+    padding: 100px;
 }
 
 div.texto p{
+    font-family: 'Roboto Mono', monospace;
     text-indent: 50px;
 }
 
-hgroup{
-    margin: 50px  0px 0px 0px;
+div.texto h2, h3{
+    font-family: 'Roboto Mono', monospace;
+}   
+hgroup h1{
+    position: absolute;
+    margin: 20px  0px 0px 180px;
     text-align: center;
     font-family: "Comic Sans MS", cursive, sans-serif;
 }
@@ -43,6 +47,8 @@ figcaption{
     margin-top: 2px;
     text-align: center;
     font-family: "Comic Sans MS", cursive, sans-serif;
+    border-bottom: 1px double #606060;
+    padding-bottom: 15px; 
 }
 
 nav#menu{
@@ -77,4 +83,33 @@ nav#menu a:hover{
     color: #fff ;
 }
 
+section#corpo{
+    display: block;
+    width: 400px;
+    float: left;
+    padding: 15px;
+}
 
+section#corpo h3{
+    margin-top: 25px;
+}
+
+aside#lateral{
+    display: block;
+    width: 320px;
+    float: right;
+    border-left: 1px solid #606060;
+    padding: 15px;
+}
+img#evento{
+    width: 320px;   
+    height: 200px;
+    margin: 30px 50px 50px 40px;
+}
+
+footer#rodape{
+    text-align: center;
+    clear: both;
+    border-top: 1px double #606060;
+    padding: 10px;
+}
